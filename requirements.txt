@@ -1,0 +1,7 @@
+numpy
+opencv-python
+pytesseract
+tensorflow
+easyocr
+scikit-learn
+Pillow
