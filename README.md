@@ -36,8 +36,11 @@ untuk gambar
 <br/>
 
 ## FinancyQ-API Reference
+
+Our Base URL : `https://financyq-api-app.web.app/`\
 [Postman FinancyQ API documentation](https://documenter.getpostman.com/view/34627628/2sA3XLDitK)
 Feel Free to Test Our API
+
 
 ### Authentications
 |Endpoint              |Method  | Content-Type       | Authorization  | Description                                   |
@@ -63,7 +66,8 @@ Feel Free to Test Our API
 | `/api/transactions/:type`                 | POST     | `application/json`    | `Bearer Token` | Create a transaction of the specified `type` user                  |
 | `/api/transactions/:type/:id`             | PUT      | `application/json`    | `Bearer Token` | Update a transaction of the specified `type` and `id` transaction  |
 | `/api/transactions/:type/:id`             | DELETE   | `application/json`    | `Bearer Token` | Delete a transaction of the specified `type` and `id` transaction  |
-| `/api/transactions/classify`              | DELETE   | `multipart/form-data` | `Bearer Token` | Scanning Image using model ML                                      |
+| `/api/transactions/classify`              | DELETE   | `multipart/form-data` |                | Scanning Image using model ML                                      |
+
 `type` is params for `pemasukan` or `pengeluaran` to matching based on database`s tables.
 
 
