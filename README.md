@@ -35,7 +35,7 @@ untuk gambar
 
 ## FinancyQ-API Reference
 ### Authentications
-|Endpoint              |Method  | Parameter          | Authorization  | Description                                   |
+|Endpoint              |Method  | Content-Type       | Authorization  | Description                                   |
 |:---------------------|:-------| :------------------| :------------- | :---------------------------------------------|
 | `/signup`            |POST    | `application/json` |                | Register user                                 |
 | `/verifyotp`         |POST    | `application/json` |                | Verify Token user from email                  |
@@ -43,24 +43,27 @@ untuk gambar
 | `/logout`            |POST    | `application/json` |                | Logout user                                   |
 
 ### Users
-|Endpoint                |Method  | Parameter          | Authorization  | Description                                   |
+|Endpoint                |Method  | Content-Type       | Authorization  | Description                                   |
 |:-----------------------|:-------| :------------------| :------------- | :---------------------------------------------|
 | `/users:username`      |GET     | `application/json` | `Bearer Token` | Get a specific user                           |
 | `/users:username`      |POST    | `application/json` | `Bearer Token` | Change Data of user                           |
 | `/users:username`      |DELETE  | `application/json` | `Bearer Token` | Delete Account user                           |
 
 ### Transactions
-|Endpoint                      |Method  | Parameter          | Authorization  | Description                           |
-|:-----------------------------|:-------| :------------------| :------------- | :-------------------------------------|
-| `/products-catalog`          | GET    | `application/json` | `Bearer Token` | Get all product catalog               |
-| `/product-category/category` | GET    | `application/json` | `Bearer Token` | Get product catalog based on category |
-| `/product-id/id`             | GET    | `application/json` | `Bearer Token` |GET product by Id                      |
-| `/product-catalog`           | POST   | `application/json` | `Bearer Token` |Add Product for Catalog                |
-| `/product-catalog/id`        | PUT    | `application/json` | `Bearer Token` |Update Product Catalog                 |
+|Endpoint                                   | Method   | Content-Type       | Authorization  | Description                                                        |
+|:------------------------------------------|:---------| :------------------| :------------- | :------------------------------------------------------------------|
+| `/api/transactions/:userId/export-pdf`    | GET      | `application/json` | `Bearer Token` | Get Download a PDF of History Transaction a specific user          |
+| `/api/transactions/total/:type/:idUser`   | GET      | `application/json` | `Bearer Token` | Get Total/Sum of `Pemasukan` and `Pengeluaran` value of user       |
+| `/api/transactions/:type/:idUser`         | GET      | `application/json` | `Bearer Token` | Get History transaction of `type` user                             |
+| `/api/transactions/:type`                 | POST     | `application/json` | `Bearer Token` | Create a transaction of the specified `type` user                  |
+| `/api/transactions/:type/:id`             | PUT      | `application/json` | `Bearer Token` | Update a transaction of the specified `type` and `id` transaction  |
+| `/api/transactions/:type/:id`             | DELETE   | `application/json` | `Bearer Token` | Delete a transaction of the specified `type` and `id` transaction  |
+
+`type` is params for `pemasukan` or `pengeluaran` to matching based on database`s tables.
 
 
 ### Education Content
-|Endpoint                 |Method  | Parameter          | Authorization  | Description                                   |
+|Endpoint                 |Method  | Content-Type       | Authorization  | Description                                   |
 |:------------------------|:-------| :------------------| :------------- | :---------------------------------------------|
 | `/education-content`    |GET     | `application/json` |                | Get list of education content                 |
 | `/education-content/:id`|GET     | `application/json` |                | Get a specific of education content           |
