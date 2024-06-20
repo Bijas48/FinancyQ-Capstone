@@ -24,6 +24,8 @@ Why FinancyQ? Because we understand the financial challenges that are often face
 
 untuk gambar
 <br>
+## Machine Learning Model
+[Machine Learning Overview](https://colab.research.google.com/drive/1Hg4-T_aGRaU3wlkQsK8aSfOYF-Gg9ESo?usp=sharing#scrollTo=NtYSbOo43ZMT)
 
 ## Cloud Computing Infrastructure
 ![Design Infra](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/FinancyQ-Architecture.PNG)
