@@ -36,6 +36,9 @@ untuk gambar
 <br/>
 
 ## FinancyQ-API Reference
+[Postman FinancyQ API documentation](https://documenter.getpostman.com/view/34627628/2sA3XLDitK)
+Feel Free to Test Our API
+
 ### Authentications
 |Endpoint              |Method  | Content-Type       | Authorization  | Description                                   |
 |:---------------------|:-------| :------------------| :------------- | :---------------------------------------------|
@@ -52,15 +55,15 @@ untuk gambar
 | `/users:username`      |DELETE  | `application/json` | `Bearer Token` | Delete Account user                           |
 
 ### Transactions
-|Endpoint                                   | Method   | Content-Type       | Authorization  | Description                                                        |
-|:------------------------------------------|:---------| :------------------| :------------- | :------------------------------------------------------------------|
-| `/api/transactions/:userId/export-pdf`    | GET      | `application/json` | `Bearer Token` | Get Download a PDF of History Transaction a specific user          |
-| `/api/transactions/total/:type/:idUser`   | GET      | `application/json` | `Bearer Token` | Get Total/Sum of `Pemasukan` and `Pengeluaran` value of user       |
-| `/api/transactions/:type/:idUser`         | GET      | `application/json` | `Bearer Token` | Get History transaction of `type` user                             |
-| `/api/transactions/:type`                 | POST     | `application/json` | `Bearer Token` | Create a transaction of the specified `type` user                  |
-| `/api/transactions/:type/:id`             | PUT      | `application/json` | `Bearer Token` | Update a transaction of the specified `type` and `id` transaction  |
-| `/api/transactions/:type/:id`             | DELETE   | `application/json` | `Bearer Token` | Delete a transaction of the specified `type` and `id` transaction  |
-
+|Endpoint                                   | Method   |  Content-Type         | Authorization  | Description                                                        |
+|:------------------------------------------|:---------| :---------------------| :------------- | :------------------------------------------------------------------|
+| `/api/transactions/:userId/export-pdf`    | GET      | `application/json`    | `Bearer Token` | Get Download a PDF of History Transaction a specific user          |
+| `/api/transactions/total/:type/:idUser`   | GET      | `application/json`    | `Bearer Token` | Get Total/Sum of `Pemasukan` and `Pengeluaran` value of user       |
+| `/api/transactions/:type/:idUser`         | GET      | `application/json`    | `Bearer Token` | Get History transaction of `type` user                             |
+| `/api/transactions/:type`                 | POST     | `application/json`    | `Bearer Token` | Create a transaction of the specified `type` user                  |
+| `/api/transactions/:type/:id`             | PUT      | `application/json`    | `Bearer Token` | Update a transaction of the specified `type` and `id` transaction  |
+| `/api/transactions/:type/:id`             | DELETE   | `application/json`    | `Bearer Token` | Delete a transaction of the specified `type` and `id` transaction  |
+| `/api/transactions/classify`              | DELETE   | `multipart/form-data` | `Bearer Token` | Scanning Image using model ML                                      |
 `type` is params for `pemasukan` or `pengeluaran` to matching based on database`s tables.
 
 
