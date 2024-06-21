@@ -20,9 +20,14 @@ Why FinancyQ? Because we understand the financial challenges that are often face
 
 </div>
 
+# APK App
+[Click Here](https://drive.google.com/drive/folders/1CsYPlkcOE8taGhDN0y322GHwObfhY_sW?usp=sharing)
+
 ## Screenshots
-![SS1](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_1app.PNG)
-![SS2](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_2app.PNG)
+![SS1](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_3app.PNG)
+![SS2](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_4app.PNG)
+![SS1](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_5app.PNG)
+![SS2](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_6app.PNG)
 <br>
 ## Machine Learning Model
 [Machine Learning Overview](https://colab.research.google.com/drive/1Hg4-T_aGRaU3wlkQsK8aSfOYF-Gg9ESo?usp=sharing#scrollTo=NtYSbOo43ZMT)
