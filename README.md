@@ -21,8 +21,8 @@ Why FinancyQ? Because we understand the financial challenges that are often face
 </div>
 
 ## Screenshots
-
-untuk gambar
+![SS1](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_1app.PNG)
+![SS2](https://github.com/Bijas48/FinancyQ-Capstone/blob/main/assets/SS_2app.PNG)
 <br>
 ## Machine Learning Model
 [Machine Learning Overview](https://colab.research.google.com/drive/1Hg4-T_aGRaU3wlkQsK8aSfOYF-Gg9ESo?usp=sharing#scrollTo=NtYSbOo43ZMT)
